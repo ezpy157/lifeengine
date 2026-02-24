@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>现生模拟器</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div id="app">
+
+    <header>
+        <div id="title">现生模拟器</div>
+        <div id="yearDisplay"></div>
+        <button id="nextYearBtn">进入下一年</button>
+    </header>
+
+    <div id="container">
+
+        <aside id="sidebar">
+            <button onclick="UI.openPanel('character')">人物</button>
+            <button onclick="UI.openPanel('family')">家庭</button>
+            <button onclick="UI.openPanel('career')">职业</button>
+            <button onclick="UI.openPanel('assets')">资产</button>
+            <button onclick="UI.openPanel('relations')">关系</button>
+            <button onclick="UI.openPanel('social')">网络</button>
+            <button onclick="UI.openPanel('log')">日志</button>
+        </aside>
+
+        <main id="mainPanel">
+            <div id="content"></div>
+        </main>
+
+        <aside id="statusPanel">
+            <div id="statusContent"></div>
+        </aside>
+
+    </div>
+
+</div>
+
+<script src="data.js"></script>
+<script src="engine.js"></script>
+<script src="ui.js"></script>
+
+</body>
+</html>
